@@ -1,13 +1,11 @@
 import Carousel from "./Carousel";
+import img from "./image1.png";
 
-const imageUrls = [
-  "https://source.unsplash.com/random/800x600?nature,1",
-  "https://source.unsplash.com/random/800x600?nature,2",
-  "https://source.unsplash.com/random/800x600?nature,3",
-];
+const imageUrls = ["./image1.png", "./image2.png"];
 
 const CarouselImplementation = () => (
   <div className="p-4">
+    <img />
     <Carousel images={imageUrls} interval={4000} />
   </div>
 );
