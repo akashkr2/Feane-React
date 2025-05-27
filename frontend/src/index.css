@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "flyonui" {
+  themes: black --default;
+}
+
+@import "flyonui/variants.css";
+@source "./node_modules/flyonui/flyonui.js";
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/dancing-script/WEB/fonts/DancingScript-Bold.woff2")
+      format("woff2"),
+    url("/fonts/dancing-script/WEB/fonts/DancingScript-Bold.woff")
+      format("woff"),
+    url("fonts//dancing-script/WEB/fonts/DancingScript-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

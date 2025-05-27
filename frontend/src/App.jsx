@@ -1,0 +1,28 @@
+import React from "react";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import MenuAnimated from "./components/MenuAnimated";
+import AboutUs from "./components/AboutUs";
+import BookATable from "./components/BookATable";
+
+const App = () => {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<MenuAnimated />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/book-a-table" element={<BookATable />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
+  );
+};
+
+export default App;
