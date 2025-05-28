@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MenuItemTemplate from "./templates/MenuItemTemplate";
+import MenuItemCard from "./templates/MenuItemTemplate";
 import { Link } from "react-router-dom";
 
 const menuItems = [
@@ -101,7 +101,7 @@ const Menu = () => {
 
         <div className="grid min-w-[30vw] grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full px-4">
           {filteredItems.map((item) => (
-            <MenuItemTemplate key={item.id} item={item} />
+            <MenuItemCard key={item.id} item={item} />
           ))}
         </div>
 

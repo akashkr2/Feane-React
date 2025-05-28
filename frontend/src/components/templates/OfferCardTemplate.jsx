@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BiSolidCart } from "react-icons/bi";
 
-const OfferCardTemplate = ({ imageSrc, title, discount, link }) => {
+const OfferCard = ({ imageSrc, title, discount, link }) => {
   return (
     <div className="flex items-center p-4 bg-[#222831] text-white rounded-md w-full max-w-2xl group hover:shadow-lg transition-shadow duration-300">
       <div className="relative w-44 h-44 rounded-full border-[5px] border-[#ffbe33] overflow-hidden mr-4 shrink-0">
@@ -27,4 +27,4 @@ const OfferCardTemplate = ({ imageSrc, title, discount, link }) => {
   );
 };
 
-export default OfferCardTemplate;
+export default OfferCard;

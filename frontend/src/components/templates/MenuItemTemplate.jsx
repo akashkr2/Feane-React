@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSolidCart } from "react-icons/bi";
 
-const MenuItemTemplate = ({ item }) => {
+const MenuItemCard = ({ item }) => {
   return (
     <div className="group transition-transform duration-300 transform">
       <div
@@ -35,4 +35,4 @@ const MenuItemTemplate = ({ item }) => {
   );
 };
 
-export default MenuItemTemplate;
+export default MenuItemCard;

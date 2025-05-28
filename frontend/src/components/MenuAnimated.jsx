@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MenuItemTemplate from "./templates/MenuItemTemplate";
+import MenuItemCard from "./templates/MenuItemTemplate";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { BiSolidCart } from "react-icons/bi";
@@ -117,7 +117,7 @@ const MenuAnimated = () => {
                 exit={{ opacity: 0, scale: 0 }}
                 transition={{ duration: 0.3, ease:"easeInOut" }}
               >
-                <MenuItemTemplate item={item} />
+                <MenuItemCard item={item} />
               </motion.div>
             ))}
           </AnimatePresence>

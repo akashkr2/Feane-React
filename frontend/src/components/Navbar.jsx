@@ -76,7 +76,7 @@ const Navbar = () => {
               { element: "Home", location: "/" },
               { element: "Menu", location: "/menu" },
               { element: "About Us", location: "/about" },
-              { element: "Book Table", location: "/book-table" },
+              { element: "Book Table", location: "/book-a-table" },
             ].map((item, index) => (
               <Link
                 key={index}

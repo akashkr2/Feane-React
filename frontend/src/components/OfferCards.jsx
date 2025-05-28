@@ -1,5 +1,5 @@
 import React from "react";
-import OfferCardTemplate from "./templates/OfferCardTemplate";
+import OfferCard from "./templates/OfferCardTemplate";
 
 const OfferCards = () => {
   const offerCardsData = [
@@ -21,7 +21,7 @@ const OfferCards = () => {
       {offerCardsData.map((item, index) => {
         return (
           <div key={index} className="lg:flex-1/2 md:flex-1">
-            <OfferCardTemplate {...item} />
+            <OfferCard {...item} />
           </div>
         );
       })}
