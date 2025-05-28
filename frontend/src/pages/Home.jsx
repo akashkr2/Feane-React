@@ -5,7 +5,6 @@ import Menu from "../components/Menu";
 import MenuAnimated from "../components/MenuAnimated";
 import AboutUs from "../components/AboutUs";
 import BookATable from "../components/BookATable";
-import CarouselImplementation from "../components/carousel/CarouselImplementation";
 
 const Home = () => {
   return (
@@ -29,7 +28,6 @@ const Home = () => {
         <AboutUs />
         <div className="bg-white px-25">
           <BookATable />
-          <CarouselImplementation />
         </div>
       </div>
     </>
